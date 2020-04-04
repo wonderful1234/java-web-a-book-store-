@@ -1,5 +1,4 @@
 package com.demo;
-
 import java.io.Serializable;
 
 public class Manager implements Serializable {

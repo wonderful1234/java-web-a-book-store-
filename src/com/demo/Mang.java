@@ -39,7 +39,7 @@ public class Mang extends HttpServlet {
 		if(password.equals(repassword)==true) {
 			request.getRequestDispatcher("/Show.jsp").forward(request, response);
 		}else {
-			messageo="Çë¼ì²éÓÃ»§ÃûºÍÃÜÂë";
+			messageo="è¯·æ£€æŸ¥ç”¨æˆ·åå’Œå¯†ç ;
 			request.getSession().setAttribute("messageo",messageo);
 	     	 response.sendRedirect("manage.jsp");
 		}

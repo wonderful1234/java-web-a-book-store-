@@ -23,5 +23,4 @@ public class Cart extends HttpServlet {
 		request.getSession().setAttribute("yu", yu);
 		request.getRequestDispatcher("/"+books).forward(request, response);
 	}
-
 }

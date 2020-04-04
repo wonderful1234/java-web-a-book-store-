@@ -1,9 +1,8 @@
 package com.demo;
 import java.security.MessageDigest;
 import java.util.logging.Logger;
-
 /**
- * MD5¼ÓÃÜËã·¨
+ * MD5åŠ å¯†ç®—æ³•
  */
 public class MD5 {
 
@@ -13,13 +12,13 @@ public class MD5 {
         };
         try {
             byte[] btInput = key.getBytes();
-            // »ñµÃMD5ÕªÒªËã·¨µÄ MessageDigest ¶ÔÏó
+            // è·å¾—MD5æ‘˜è¦ç®—æ³•çš„ MessageDigest å¯¹è±¡
             MessageDigest mdInst = MessageDigest.getInstance("MD5");
-            // Ê¹ÓÃÖ¸¶¨µÄ×Ö½Ú¸üĞÂÕªÒª
+            // ä½¿ç”¨æŒ‡å®šçš„å­—èŠ‚æ›´æ–°æ‘˜è¦
             mdInst.update(btInput);
-            // »ñµÃÃÜÎÄ
+            // è·å¾—å¯†æ–‡
             byte[] md = mdInst.digest();
-            // °ÑÃÜÎÄ×ª»»³ÉÊ®Áù½øÖÆµÄ×Ö·û´®ĞÎÊ½
+            // æŠŠå¯†æ–‡è½¬æ¢æˆåå…­è¿›åˆ¶çš„å­—ç¬¦ä¸²å½¢å¼
             int j = md.length;
             char str[] = new char[j * 2];
             int k = 0;

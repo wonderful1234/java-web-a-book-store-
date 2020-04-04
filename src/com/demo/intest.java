@@ -1,7 +1,6 @@
 package com.demo;
 
 import java.io.IOException;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -21,7 +20,7 @@ public class intest extends HttpServlet {
 		String message="";
 		String choose=request.getParameter("whether");
 		choose=new String(choose.getBytes("ISO-8859-1"),"UTF-8");
-		if(choose.equals("µÇÂ¼")) {
+		if(choose.equals("ç™»å½•")) {
 		String username=request.getParameter("username");
 		String password=MD5.MD5(request.getParameter("password"));
 		String repassword=(String)dao.findpassword(username);
@@ -30,12 +29,12 @@ public class intest extends HttpServlet {
 			request.getSession().setAttribute("messages",message);
 	     	 response.sendRedirect("main.jsp");
 		}else {
-			message="Çë¼ì²éÓÃ»§ÃûºÍÃÜÂë";
+			message="è¯·æ£€æŸ¥ç”¨æˆ·åå’Œå¯†ç ";
 			request.getSession().setAttribute("message",message);
 	     	 response.sendRedirect("login.jsp");
 		}
 		}
-		if(choose.equals("Íü¼ÇÃÜÂë")) {
+		if(choose.equals("å¿˜è®°å¯†ç ")) {
 			request.getRequestDispatcher("/Forget.jsp").forward(request, response);
 		}
 	}

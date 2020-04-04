@@ -23,7 +23,7 @@ public class AddBook extends HttpServlet {
 		boolean c=dao.addBook(name, price);
 		if(c==true)
 		{
-			n="Ìí¼Ó³É¹¦";
+			n="æ·»åŠ æˆåŠŸ";
 			request.getSession().setAttribute("cc",n);
 	     	 response.sendRedirect("AddBook.jsp");
 		}

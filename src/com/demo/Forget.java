@@ -6,7 +6,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 /**
  * Servlet implementation class Forget
  */
@@ -22,7 +21,7 @@ public class Forget extends HttpServlet {
 		String password=MD5.MD5(request.getParameter("password"));
 		if(dao.findpassword(name)==null)
 		{
-			cv="Çë¼ì²éÓÃ»§Ãû";
+			cv="è¯·æ£€æŸ¥ç”¨æˆ·å";
 			request.getSession().setAttribute("cv",cv);
 			request.getRequestDispatcher("/Forget.jsp").forward(request, response);
 		}
@@ -37,7 +36,7 @@ public class Forget extends HttpServlet {
 			}
 		}
 		else {
-			cv="Çë¼ì²éµç»°ºÅÂë";
+			cv="è¯·æ£€æŸ¥ç”µè¯å·ç ";
 			request.getSession().setAttribute("cv",cv);
 	     	 response.sendRedirect("Forget.jsp");
 		}

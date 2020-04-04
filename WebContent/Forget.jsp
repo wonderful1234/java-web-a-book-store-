@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>修改密码</title>
+<title>找回/修改</title>
 </head>
 <body>
 <script language="JavaScript" type="text/javascript">

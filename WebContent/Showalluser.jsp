@@ -3,7 +3,7 @@
 <%@ page import="java.util.*,com.demo.User" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
-<head><title>显示所有用户信息</title></head>
+<head><title>显示用户信息</title></head>
 <body>
 <div style="background: url(imges/25.jpg);height:600px;width:100%;">
 

@@ -30,4 +30,3 @@ public class User implements Serializable{
 	     this.phone = phone;
    }  
 }
-

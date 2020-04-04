@@ -9,7 +9,7 @@ public class Test1 {
 		Jedis jedis=null;
 		try {
 			jedis=jedisPool.getResource();
-			System.out.println(jedis.sismember("tel","17318702983"));
+			System.out.println(jedis.sismember("tel","xxxxxxxxxxx"));
 			
 		}catch (Exception e) {
 			e.printStackTrace();

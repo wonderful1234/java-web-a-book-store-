@@ -34,7 +34,7 @@ public class Upprice extends HttpServlet {
 		name=new String(name.getBytes("ISO-8859-1"),"UTF-8");
 		boolean h=dao.modify(name, price);
 		if(h==true) {
-			o="�޸ĳɹ�";
+			o="修改成功";
 			request.getSession().setAttribute("kk",o);
 	     	 response.sendRedirect("Updateprice.jsp");
 		}

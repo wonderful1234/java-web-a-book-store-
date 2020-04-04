@@ -158,7 +158,7 @@
                 			<div class="dp_num">已经选择0个书籍
                 				<p class="dq_price">总计<span>￥55.1</span>元</p>
                 				<button class="get">立即购买</button>
-                			</div>
+                			</div> 
                 		</div>
                 		<!-- 搭配1 -->
                 		<div class="dq_ori">

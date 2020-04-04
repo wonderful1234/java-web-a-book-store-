@@ -53,7 +53,7 @@
 			<br/>
 			<!--清除浮动-->
 			<div style="clear: both;"></div>
-			<!--3.第二部分：导航栏部分-->
+			<!--3第二部分：导航栏部分-->
 			<div style="background-color: black; height: 60px;">
 				<a href="#" class="amenu">首页</a>
 				<a href="#" class="amenu">技术书籍</a>

@@ -28,7 +28,7 @@ public class registr extends HttpServlet {
 				Jedisway s = new Jedisway();
 				String x=s.gets(vvv);
 				if(x==null) {
-					messages="Çë¼ì²éÑéÖ¤Âë!";
+					messages="è¯·æ£€æŸ¥éªŒè¯ç !";
 					request.getSession().setAttribute("messagess", messages);
 					request.getRequestDispatcher("/register.jsp").forward(request, response);
 				}
@@ -41,14 +41,14 @@ public class registr extends HttpServlet {
 					request.getRequestDispatcher("/Successful.jsp").forward(request, response);
 				}
 				if(x.equals(request.getParameter("yanzheng"))==false) {
-					messages="ÑéÖ¤Âë´íÎó";
+					messages="éªŒè¯ç é”™è¯¯";
 					request.getSession().setAttribute("messagess", messages);
 					response.sendRedirect("register.jsp");
 				}
 			}
-			
+		
 			if (tpassword.length() > 0) {
-				messages = "´ËÓÃ»§ÃûÒÑ¾­×¢²á";
+				messages = "æ­¤ç”¨æˆ·åå·²ç»æ³¨å†Œ";
 				request.getSession().setAttribute("messagess", messages);
 				response.sendRedirect("register.jsp");
 			}

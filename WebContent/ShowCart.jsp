@@ -35,7 +35,6 @@ for(int i=0;i<lists.size();i++){
 <tr><td><%=lists.get(i) %></td>
     <td><%=1 %></td></tr>
 <%
-
 }
 %>
 </table>

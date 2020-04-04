@@ -52,7 +52,7 @@ input{outline:none;background-color:transparent;font-size:20px;font-family:楷�
 		}
 	</style>
 	<body onload="init()">
-			
+		
 		<div>
 			<!--第一部分。LOGO部分，创建三个div-->
 			<div>

@@ -29,7 +29,6 @@
     </div>
     <div class="floatDbg"></div>
 </div>
-
 <script type="text/javascript">
 var flag=1;
 $('#rightArrow').click(function(){

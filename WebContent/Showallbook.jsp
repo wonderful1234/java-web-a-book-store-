@@ -3,7 +3,7 @@
 <%@ page import="java.util.*,com.demo.Book" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
-<head><title>显示所有书籍</title></head>
+<head><title>显示书籍</title></head>
 <body>
 <div style="background: url(imges/27.jpg);height:600px;width:100%;">
 <table border="4">

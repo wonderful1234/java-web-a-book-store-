@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title></title>
+<title>success</title>
 </head>
 <body>
 <div style="background: url(imges/88.jpg);height:600px;width:100%;">

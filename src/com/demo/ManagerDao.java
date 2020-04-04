@@ -20,5 +20,4 @@ public class ManagerDao extends BDao {
  	  }
  	  return manager.getPassword();
  }
-
 }

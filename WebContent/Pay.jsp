@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title> title here</title>
 </head>
 <body>
 <div style="background: url(imges/2025.jpg);height:600px;width:100%;">

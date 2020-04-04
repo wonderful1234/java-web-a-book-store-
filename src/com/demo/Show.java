@@ -1,5 +1,4 @@
 package com.demo;
-
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -19,24 +18,24 @@ public class Show extends HttpServlet {
 		response.setContentType("text/html;charset=utf-8");
 		String views=request.getParameter("view");
 		views=new String(views.getBytes("ISO-8859-1"),"UTF-8");
-		if(views.equals("查看用户信息")) {
+		if(views.equals("鏌ョ湅鐢ㄦ埛淇℃伅")) {
 			UserDao dao=new UserDao();
 			ArrayList<User>list=new ArrayList<User>();
 			list=(ArrayList)dao.findAllUser();
 			request.getSession().setAttribute("list",list);
 			request.getRequestDispatcher("/Showalluser.jsp").forward(request, response);
 		}
-		if(views.equals("查看书籍信息")) {
+		if(views.equals("鏌ョ湅涔︾睄淇℃伅")) {
 			BookDao daov=new BookDao();
 			ArrayList<Book>lists=new ArrayList<Book>();
 			lists=(ArrayList)daov.findAllBook();
 			request.getSession().setAttribute("lists",lists);
 			request.getRequestDispatcher("/Showallbook.jsp").forward(request, response);
 		}
-		if(views.equals("增加书籍")) {
+		if(views.equals("澧炲姞涔︾睄")) {
 			request.getRequestDispatcher("/AddBook.jsp").forward(request, response);
 		}
-		if(views.equals("修改价格")) {
+		if(views.equals("淇敼浠锋牸")) {
 			request.getRequestDispatcher("/Updateprice.jsp").forward(request, response);
 		}
 		

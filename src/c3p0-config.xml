@@ -19,7 +19,7 @@
 			<property name="maxStatements">0</property>
 		</user-overrides>
 	</default-config> 
-	<!-- 命名的配置,指定时使用 -->
+	<!-- 命名的配置,指定时用 -->
 	<named-config name="wonder">
 		<property name="driverClass">org.postgresql.Driver</property>
 		<property name="jdbcUrl">jdbc:postgresql://localhost:5432/postgres</property>

@@ -5,7 +5,7 @@ import javax.naming.*;
 
 public class BaseDao {
    DataSource dataSource;
-   // ÔÚ¹¹Ôì·½·¨ÖĞ·µ»ØÊı¾İÔ´¶ÔÏó
+   // åœ¨æ„é€ æ–¹æ³•ä¸­è¿”å›æ•°æ®æºå¯¹è±¡
     public BaseDao () {
 	  try {
 	     Context context = new InitialContext();
@@ -15,9 +15,8 @@ public class BaseDao {
 	      System.out.println("Exception:"+ne);
 	  }
 	}
-	// ·µ»ØÒ»¸öÁ¬½Ó¶ÔÏó
+	// è¿”å›ä¸€ä¸ªè¿æ¥å¯¹è±¡
 	public Connection getConnection()throws Exception{
 		return dataSource.getConnection(); 
 	}
 }
-

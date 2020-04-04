@@ -14,7 +14,6 @@
 	color: #FF0000;
 	opacity: 1;
 }
-
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
 	color: #FF0000;
 	opacity: 1;

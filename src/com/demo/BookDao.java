@@ -1,7 +1,6 @@
 package com.demo;
 import java.sql.*;
 import java.util.ArrayList;
-
 import com.demo.Book;
 public class BookDao extends BaseDao{
 	public boolean addBook(String name, double price){  	  

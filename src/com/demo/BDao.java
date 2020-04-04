@@ -12,7 +12,7 @@ public class BDao {
 		      System.out.println("Exception:"+ne);
 		  }
 		}
-		// 返回一个连接对象
+		// 
 		public Connection getConnection()throws Exception{
 			return dataSource.getConnection(); 
 		}

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import com.demo.User;
 
 public class UserDao extends BaseDao{
-   // ²åÈëÒ»Ìõ¼ÇÂ¼
+   // æ’å…¥ä¸€æ¡è®°å½•
    public void addUser(User user){  	  
    	   String sql = "INSERT INTO users" +
    	   		"(name,password,email,phone)VALUES(?,?,?,?)";	   
@@ -36,7 +36,7 @@ public class UserDao extends BaseDao{
    		  return false;
    	   }
    } 
-   // °´ÓÃ»§Ãû²éÕÒÃÜÂë
+   // æŒ‰ç”¨æˆ·åæŸ¥æ‰¾å¯†ç 
    public String findpassword(String name){ 
 	      String sql = "SELECT *FROM users WHERE name=?";             
       User  user = new User();
@@ -55,7 +55,7 @@ public class UserDao extends BaseDao{
    	  }
    	  return user.getPassword();
    }
-   //°´ÓÃ»§Ãû²éÕÒµç»°ºÅÂë
+   //æŒ‰ç”¨æˆ·åæŸ¥æ‰¾ç”µè¯å·ç 
    public String findphone(String name){ 
 	      String sql = "SELECT *FROM users WHERE name=?";             
    User  user = new User();
@@ -76,7 +76,7 @@ public class UserDao extends BaseDao{
 	  }
 	  return user.getPhone();
 }
-   // ²éÑ¯ËùÓĞÓÃ»§
+   // æŸ¥è¯¢æ‰€æœ‰ç”¨æˆ·
    public ArrayList<User> findAllUser(){  	  
 	   	  
 	   	  ArrayList<User> custList = new ArrayList<>();
@@ -100,6 +100,5 @@ public class UserDao extends BaseDao{
 	   	  }
 	   }
 	}
-
 
 

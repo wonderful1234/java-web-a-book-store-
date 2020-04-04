@@ -15,5 +15,4 @@ public class Book implements Serializable{
   public void setPrice(double price) {
 	     this.price = price;
   }
-
 }

@@ -19,7 +19,7 @@ public class JedisPoolUtil {
 					
 					jedisPool=new JedisPool(poolConfig, "127.0.0.1",6379);
 				}
-				
+			
 			}
 		}
 		return jedisPool;

@@ -1,5 +1,4 @@
 package com.demo;
-
 import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -17,13 +16,13 @@ public class ValidationServlet extends HttpServlet {
 		String d = "";
 		String vvv = request.getParameter("phone").trim();
 		if (vvv.length()==0) {
-			message = "ÇëÌîĞ´ÊÖ»úºÅ";
+			message = "è¯·å¡«å†™æ‰‹æœºå·";
 		} else {
 			int c;
 			Jedisway f = new Jedisway();
 			c = f.setset(vvv);
 			if (c == 0)
-				message = "´ËÊÖ»úºÅÒÑ¾­×¢²á";
+				message = "æ­¤æ‰‹æœºå·å·²ç»æ³¨å†Œ";
 			if (c == 1) {
 				new SendInformation();
 				try {
@@ -34,7 +33,7 @@ public class ValidationServlet extends HttpServlet {
 				}
 				Jedisway s = new Jedisway();
 				s.sets(vvv, d);
-				message = "Çë²éÊÕ£¡";
+				message = "è¯·æŸ¥æ”¶ï¼";
 			}
 		}
 		PrintWriter out = response.getWriter();

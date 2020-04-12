@@ -1,0 +1,17 @@
+postgres=# CREATE TABLE manager(
+postgres(# name varchar(200),
+postgres(# password varchar(200),
+postgres(# CONSTRAINT manager_pkey PRIMARY KEY(name)
+postgres(# );
+postgres=# CREATE TABLE users(
+postgres(# name varchar(200),
+postgres(# password varchar(200),
+postgres(# email varchar(200),
+postgres(# phone varchar(200),
+postgres(# CONSTRAINT manager_pkey PRIMARY KEY(name)
+postgres(# );
+postgres=# CREATE TABLE book(
+postgres(# pname varchar(200),
+postgres(# price float,
+postgres(# CONSTRAINT book_pkey PRIMARY KEY(pname)
+postgres(# );

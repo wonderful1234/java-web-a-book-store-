@@ -25,8 +25,8 @@ public class SendInformation {
     static final String domain = "dysmsapi.aliyuncs.com";
 
     // TODO 此处需要替换成开发者自己的AK(在阿里云访问控制台寻找)
-    static final String accessKeyId = "LTAI5C1DyYTG70je";
-    static final String accessKeySecret = "vOehm4nrZTdSLUDOFB0TPw71qjFXxE";
+    static final String accessKeyId = "xxxxxxxx";
+    static final String accessKeySecret = "xxxxxxxxxxxxxxx";
 
     public static String sendSms(String s) throws ClientException {
     	String v=vcode();
